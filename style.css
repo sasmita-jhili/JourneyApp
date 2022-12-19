@@ -108,7 +108,7 @@ body {
 /* css resets ends here   */
 /* variables */
 :root {
-  --primary: #69c6ba;
+  --primary: #28cab5;
   --secondary: #69c6ba;
   --text-dark: black;
   --text-light: #e6e6e6;
@@ -138,6 +138,12 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+.justify-content{
+  justify-content: center;
+}
+.coloumn{
+  flex-direction: column;
+}
 /* navbar */
 .navbar {
   padding: 32px 100px;
@@ -161,6 +167,42 @@ ul {
 main {
   background-color: #e6e6e6;
 }
-.home_container{
-    background: url('./assets/banner.jpg');
+/* Home section.... */
+.home_container {
+  background: linear-gradient(rgb(4 0 0 / 50%), rgb(0 0 0 / 50%)),url("./assets/banner.jpg"),no-repeat;
+  text-align: center;
+  padding: 100px 0;
+  background-size: cover;
+}
+.home_heading {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: white;
+  font-size: 56px;
+  margin-bottom: 20px;
+}
+.dot{
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: white;
+  display: inline-block;
+}
+.dot_active{
+  width: 16px;
+  height: 16px;
+  margin: 8px 0;
+}
+.home_sub_heading{
+  color: white;
+  font-size: 24px;
+  margin-top: 24px;
+}
+.home_icon i{
+border-radius: 50%;
+color: var(--primary);
+font-size: 50px;
+background-color: white;
+text-decoration: none;
+margin-top: 16px;
 }
